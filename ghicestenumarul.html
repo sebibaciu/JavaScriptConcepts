@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jocul Ghiceste Numarul</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		h1 {
+			margin-top: 20px;
+		}
+		input[type="text"] {
+			font-size: 20px;
+			padding: 5px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			border: none;
+			border-bottom: 1px solid black;
+			width: 150px;
+			text-align: center;
+		}
+		input[type="button"] {
+			font-size: 16px;
+			padding: 10px;
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Jocul Ghiceste Numarul</h1>
+	<input type="text" id="guess" placeholder="Introdu numarul" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+	<input type="button" value="Ghiceste" onclick="guessNumber()">
+	<input type="button" value="Reia jocul" onclick="resetGame()">
+	<p id="message"></p>
+	<script src="ghicestenumarul.js"></script>
+</body>
+</html>

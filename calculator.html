@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		input[type="button"] {
+			font-size: 20px;
+			width: 50px;
+			height: 50px;
+		}
+		input[type="text"] {
+			font-size: 30px;
+			width: 150px;
+			text-align: right;
+			padding-right: 5px;
+			border: none;
+			border-bottom: 1px solid black;
+		}
+		table {
+			margin-top: 20px;
+		}
+		td {
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<input type="text" id="result" value="">
+	<table>
+		<tr>
+			<td><input type="button" value="7" onclick="addDigit(7)"></td>
+			<td><input type="button" value="8" onclick="addDigit(8)"></td>
+			<td><input type="button" value="9" onclick="addDigit(9)"></td>
+			<td><input type="button" value="/" onclick="addOperator('/')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" onclick="addDigit(4)"></td>
+			<td><input type="button" value="5" onclick="addDigit(5)"></td>
+			<td><input type="button" value="6" onclick="addDigit(6)"></td>
+			<td><input type="button" value="*" onclick="addOperator('*')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="1" onclick="addDigit(1)"></td>
+			<td><input type="button" value="2" onclick="addDigit(2)"></td>
+			<td><input type="button" value="3" onclick="addDigit(3)"></td>
+			<td><input type="button" value="-" onclick="addOperator('-')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="0" onclick="addDigit(0)"></td>
+			<td><input type="button" value="." onclick="addDot()"></td>
+			<td><input type="button" value="=" onclick="calculate()"></td>
+			<td><input type="button" value="+" onclick="addOperator('+')"></td>
+		</tr>
+		<tr>
+			<td colspan="4"><input type="button" value="C" onclick="clearAll()"></td>
+		</tr>
+	</table>
+	<script src="calculator.js"></script>
+</body>
+</html>

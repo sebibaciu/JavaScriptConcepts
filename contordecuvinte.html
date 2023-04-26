@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contor de Cuvinte</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		h1 {
+			margin-top: 20px;
+		}
+		textarea {
+			font-size: 16px;
+			padding: 5px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			border: none;
+			border-bottom: 1px solid black;
+			width: 300px;
+			height: 100px;
+			resize: none;
+			text-align: center;
+		}
+		input[type="button"] {
+			font-size: 16px;
+			padding: 10px;
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Contor de Cuvinte</h1>
+	<textarea id="inputText" placeholder="Introdu textul"></textarea>
+	<input type="button" value="Numara cuvintele" onclick="countWords()">
+	<input type="button" value="Resetare" onclick="resetCounter()">
+	<p id="wordCount"></p>
+	<script src="contordecuvinte.js"></script>
+</body>
+</html>
